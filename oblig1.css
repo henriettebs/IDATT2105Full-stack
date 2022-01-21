@@ -1,0 +1,199 @@
+body {
+    background-color: aliceblue;
+}
+
+.item1 {grid-area: header;}
+.item2 {grid-area: menu;}
+.item3 {grid-area: main;}
+.item4 {grid-area: right;}
+.item5 {grid-area: footer;}
+
+@media screen and (max-width: 621px) {
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        'header'
+        'main'
+        'right'
+        'footer';
+        grid-gap: 10px;
+        background-color: aliceblue;
+        padding: 10px;
+    }    
+    .logo {
+        display: none;
+    }
+    .center {
+        font-size: 30px;
+        font-family:cursive;
+        color: ghostwhite;
+        position: absolute;
+        top:20px;
+        left:20px;
+    }
+    .container {
+        position: relative;
+        height:250px;
+        border: 2px solid;
+        margin: 2px;
+    }
+    .menu{
+        display: none;
+    }
+    #page {
+        width: 99%;
+    }
+    #content1 {
+        width: 47%;
+        height: auto;
+        float: left;
+        margin: 5px;
+    }
+    #content2 {
+        width: 47%;
+        height: auto;
+        float: right;
+        margin: 5px;
+    }
+
+    #footer {
+        width: 100%;
+        height: 20px;
+        float: left;
+        font-size: small;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:azure;
+        background-color:teal;
+        opacity: 30%;
+        padding-bottom: 5px; 
+    }
+}
+@media screen and (min-width: 622px){
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        'header header header header header header header'
+        'menu main main main right right right'
+        'footer footer footer footer footer footer footer';
+        grid-gap: 10px;
+        background-color: aliceblue;
+        padding: 10px;
+    }    
+    .header {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        height: 70px;
+        background-color:mediumseagreen;
+        border: 2px solid;
+        margin: 2px;
+        background-image:image();
+    }
+    .logo {
+        width: 50px;
+        height: auto;
+        float: left;
+        margin-top: 5px;
+    }
+    .center {
+        font-size: 40px;
+        font-family:cursive;
+        color: ghostwhite;
+        position: absolute;
+        top:7px;
+        left:50px;
+    }
+    .menu {
+        position: relative;
+        width: 23%;
+        height: auto;
+        float: left;
+    }
+    .menu::before{
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:100%;
+        height:100%;
+        opacity: 0.3;
+        background-image: url('leaves.jpeg');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+        padding-bottom: 40%;
+        margin: 5px;
+    }
+    #page {
+        width: 74%;
+        float: right;
+    }
+    .container {
+        position: relative;
+        height:650px;
+        border: 2px solid;
+        margin: 2px;
+    }
+    #content1 {
+        width: 47%;
+        height: auto;
+        float: left;
+        margin: 5px;
+    }
+    
+    #content2 {
+        width: 47%;
+        height: auto;
+        float: right;
+        margin: 5px;
+    }
+    #footer {
+        width: 100%;
+        height: 20px;
+        float: left;
+        margin: 110px 0;
+        font-size: small;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:azure;
+        background-color:teal;
+        opacity: 30%;
+        padding-bottom: 5px; 
+    }
+}
+
+.grid-container > div {
+    background-color: azure;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.header {
+    height: 70px;
+    background-color:mediumseagreen;
+    border: 2px solid;
+    margin: 2px;
+    background-image:image();
+}
+
+#css-pic {
+    width: 150px;
+    float:left;
+    height: auto;
+}
+#button{
+    float: left;
+    color:mediumseagreen;
+    margin: 5px;
+    font-weight: bold;
+}
+#arrayCSS :hover{
+    background-color: black;
+    color: whitesmoke;
+}
+.buttonNumber{
+    background-color: mediumseagreen;
+    color: whitesmoke;
+    font-style: italic;
+}

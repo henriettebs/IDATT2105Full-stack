@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My test page</title>
+    <link rel="stylesheet" href="oblig1.css"> 
+    
+  </head>
+  <body>
+    <div class="header">
+        <img class="logo" src="css.png" alt="CSS" width=100%>
+        <div class="center">Welcome to a CSS tutorial</div>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <ul class="meny">
+                <li class=menyelement><a href="#">Introduction to CSS</a></li>
+                <li class=menyelement><a href="#">CSS Grid</a></li>
+                <li class=menyelement><a href="#">Connect with HTML</a></li>
+            </ul>
+        </div>
+        <div id="page">
+            <div id="content1">
+              <div id="arrayCSS">
+                <p id= "paragraphRemove" ondblclick="showArray()">Double-click here!</p>
+              </div>
+              <div id="increase">
+                <button class="buttonNumber" onclick="i();">Increase number by 1</button>
+                <button class="buttonNumber" onclick="r();">Reset to 0</button>
+                <p id="number">0</p>
+              </div>
+            </div>
+            <div id="content2">
+                <div>
+                  <button id="button" onclick="hide()">Hide/Show picture</button>
+                </div>
+                <div>
+                  <img id="css-pic" src="soc-css.png" alt="" width=100%>
+                </div>
+            </div>
+            
+        </div>
+        <div id="footer">Website created by Henriette</div>
+    </div>
+  </body>
+  <script src="oblig1.js"></script>  
+</html>
